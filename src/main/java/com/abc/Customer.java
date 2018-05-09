@@ -61,6 +61,12 @@ public class Customer {
                 s += "Maxi Savings Account\n";
                 break;
         }
+        
+        public void transferBetweenAccounts(Account from, Account to, double amount) {
+            from.withdraw(amount); 
+            to.deposit(amount);
+            
+        }
 
         //Now total up all the transactions
         double total = 0.0;
