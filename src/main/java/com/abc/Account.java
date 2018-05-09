@@ -31,6 +31,7 @@ public void withdraw(double amount) {
     } else {
         transactions.add(new Transaction(-amount));
     }
+    //this method should throw exception if amount is greater than what is in the account
 }
 
     public double interestEarned() {
